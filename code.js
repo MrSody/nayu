@@ -74,7 +74,7 @@ function loadData() {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        return data;
+        return data.preguntas;
     })
     .catch(error => {
         console.log("error ", error);

@@ -1,25 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quizzly</title>
+	<title>TOP Secret</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="body">
 
-<section id="main">	
-    <header> <h1>Quizzly!</h1></header>
-    <section id="panel">
-        <article id="Pregunta">
-            <p>¿Cuál de las siguientes invocaciones es correcta?</p>
-        </article>
-        <input type="text" id="respuesta">
-        <input type="button" id="btnValidate" value="Validar respuesta">
-        <section id="error" class="show">
-            <p>La respuesta es incorrecta...</p>
+<section id="main">
+    <section id="start">
+        <h1> 
+            Bienvenida
+        </h1>
+        <p>
+            Bajo la luna velada y en las sombras de la noche, os convoco a un viaje en los confines del misterio y la aventura. 
+            Siguiendo el rastro de los vientos antiguos, habéis encontrado este mensaje encriptado en las fibras del destino.
+            <br>
+            <br>
+            Las páginas secretas de la historia guardan los susurros del pasado, y es allí donde hallaréis las claves para descifrar los enigmas del presente. 
+            Sed astuta como el lince, fuerte como el roble y ligera como el viento. 
+            Que vuestro espíritu se entrelace junto al que os ha enviado esta invitación, forjando un lazo que desafíe los límites del tiempo y el espacio.
+            <br>
+            <br>
+            “Mi pregunta es simple... El destino es la pregunta que les he hecho. Y la respuesta es algo que deben de encontrar por su cuenta.”
+        </p>
+        <section id="sectionBtn">
+            <input type="button" value="Continuar" onclick="startCuestions()">
         </section>
     </section>
+    <section id="preguntas" class="hidden">
+        <section id="error" class="hidden">
+            <div id="msgError">
+                <p>La respuesta es incorrecta...</p>
+            </div>
+        </section>
+        <section id="correcto" class="hidden">
+            <div id="msgCorrecto">
+                <p>La respuesta es correcta...</p>
+            </div>
+        </section>
+        <div id="Pregunta">
+        </div>
+        <input type="text" id="respuesta">
+        <section id="sectionBtn">
+            <input type="button" id="btnValidate" value="Validar respuesta">
+        </section>
+    </section>
+    <section id="endGame" class="hidden">
+        <h1>
+            Te quedarías conmigo para siempre, ¿Qué vas a elegir? ¿La tristeza o el amor?
+        </h1>
+        <div id="sectionBtn">
+            <input type="button" id="amor" style="margin-right: 5px;" value="Amor" onclick="crecerAmor()">
+            <input type="button" id="triste" value="Tristeza" onclick="tristeOne()">
+        </div>
+    </section>
+    <section id="pasoOne" class="hidden">
+        <h1>
+            Se que no lo quieres, elige bien...
+        </h1>
+        <div id="sectionBtn">
+            <input type="button" id="amor" style="margin-right: 5px;" value="Amor" onclick="crecerAmor()">
+            <input type="button" id="triste" value="Tristeza" onclick="crecerAmor()">
+        </div>
+    </section>
+    <section id="pasoTwo" class="hidden">
+        <h1 style="color: black; text-align: center;">
+            No deberías de pedir más deseos.
+            <br>
+            No hay necesidad de eso. Yo me quedaré a tu lado a partir de hoy...
+        </h1>
+        <p style="color: black; text-align: center;">
+            En mundos distantes, sus vidas se tejieron
+            <br>
+            Ella una niña muy linda, él un niño de ojitos bonitos
+            <br>
+            Ella, cautivada por el K-pop y la cultura coreana
+            <br>
+            Él, amante del rap y la tranquilidad del bosque
+            <br>
+            <br>
+            Dos mundos aparte, dos pasiones opuestas, pero destinos entrelazados
+            <br>
+            Una historia que se encuentra en un punto intermedio del camino
+            <br>
+            Conversaciones tímidas, risas compartidas
+            <br>
+            Descubrieron que sus diferencias eran puentes hacia el aprendizaje
+            <br>
+            <br>
+            Él la introdujo en sus mundos, ella a los encantos de Corea
+            <br>
+            Compartieron risas, miedos y sueños en bits informáticos
+            <br>
+            Un amor nació entre lazos virtuales que desafían las distancias
+            <br>
+            Dos corazones latiendo al ritmo de melodías distintas
+            <br>
+            <br>
+            Desafíos surgieron, la adaptación fue la clave para seguir
+            <br>
+            Aprendieron lecciones valiosas en este nuevo camino
+            <br>
+            Apoyándose mutuamente, enfrentaron lo desconocido con valor
+            <br>
+            Juntos, se dieron cuenta de que podrían enfrentar todo unidos
+            <br>
+            <br>
+            Ella encontró fuerza en las palabras que él le escribía
+            <br>
+            El se convirtió en la luz para las sombras de su habitación
+            <br>
+            Ella con su pureza, él con su protección
+            <br>
+            El amor floreció en medio de sus contrastes así fueron sus días
+            <br>
+            <br>
+            Dos almas dispuestas a desafiar el futuro juntas
+            <br>
+            Dos almas que, a pesar de las diferencias, compartían un anhelo
+            <br>
+            Viajar juntos, abrazar la vida y desvanecer el miedo a lo incierto
+            <br>
+            Hoy, bajo el cielo estrellado, caminan lado a lado
+            <br>
+            <br>
+            Dos individuos únicos, unidos y listos para cumplir sus sueños
+            <br>
+            Hoy, bajo el cielo amplio y estrellado, caminan tomados de la mano
+            <br>
+            Dejaron atrás el temor, abrazaron sus sueños con pasión
+            <br>
+            Dos corazones valientes, un futuro de aventuras les espera.
+        </p>
+        <h1 style="color: black; text-align: center;">
+            Te elijo para caminar juntos en este viaje de la vida, comprometiéndome a estar a tu lado siempre
+        </h1>
+        <div id="sectionBtn">
+            <input type="button" value="Acepto" onclick="pasoThree()">
+        </div>
+    </section>
+    <section id="pasoThree" class="hidden">
+        <iframe width="100%" src="https://www.youtube.com/embed/4uh6p7YA4XY?si=_QCDrHfgVU6TEpzC&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div id="sectionBtn">
+            <input type="button" value="Continuar nuestro camino juntos" onclick="pasoFour()">
+        </div>
+    </section>
+    <section id="pasoFour" class="hidden">
+        <h1 style="color: black; text-align: center;">
+            ¡Te amo y seré quien te ame siempre!
+        </h1>
+        <p style="color: black; text-align: center;">
+            En este momento crucial, donde juntos podremos compartir este viaje de la vida, sabemos que cada decisión que tomemos abrirá nuevas puertas y oportunidades, y lo más especial es que nuestra historia será única y solo nuestra. Quiero que sepas que estoy dispuesto a dar este paso contigo. Ahora, me gustaría saber si tú también estás dispuesta para esta nueva etapa de nuestra vida juntos.
+        </p>
+        <img src="images/cats.gif" style="width: 100%;" alt="catsLove">
+    </section>
+</section>
+
+<section id="pageError" class="hidden">
+    <img src="images/secret.png" alt="secret">
 </section>
 
 <script type="text/javascript" src="code.js"></script>

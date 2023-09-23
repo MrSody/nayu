@@ -82,7 +82,7 @@ function loadCuestion(numCuestion) {
         return loadSection(data[numCuestion - 1]);
     } else {
         document.getElementById("preguntas").classList.add("hidden");
-        document.getElementById("endGame").classList.remove("hidden");
+        document.getElementById("pasoOne").classList.remove("hidden");
     }
 }
 
@@ -102,8 +102,7 @@ function validateRespuesta(respuesta){
 }
 
 function tristeOne(){
-    document.getElementById("endGame").classList.add("hidden");
-    document.getElementById("pasoOne").classList.remove("hidden");
+    document.getElementById("pasoOnePregunta").innerHTML = "Se que no lo quieres, no quieres estar triste. Elige bien...";
 }
 
 function crecerAmor(){
@@ -124,7 +123,6 @@ function crecerAmor(){
     btnTristeza.style.height = `${tristezaHeight}px`;
 
     if (Number(btnAmor.style.width.replace("px", "")) >= window.innerWidth){
-        document.getElementById("endGame").classList.add("hidden");
         document.getElementById("pasoOne").classList.add("hidden");
         document.getElementById("pasoTwo").classList.remove("hidden");
         document.getElementById("body").classList.add("fondoMuelle");

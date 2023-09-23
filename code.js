@@ -8,7 +8,7 @@ window.addEventListener("load", function (event) {
 
         if (cookie != null){
             NUMCUESTIONNOW = cookie;
-            loadCuestion(NUMCUESTIONNOW);
+            startCuestions();
         } else {
             this.document.getElementById("start").classList.remove("hidden");
         }

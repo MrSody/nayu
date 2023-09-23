@@ -156,13 +156,11 @@ function saveCookie(numCuestion){
 }
 
 function obtenerCookie() {
-    document.cookie.split(";").forEach((cookie) => {
-        console.log(cookie);
-        let dataCookie = cookie.split("=");
-        if (dataCookie[0].trim() === "numCuestion") {
-            return dataCookie[1];
-        }
-    });
+    let dataCookie = document.cookie.split("=");
+
+    if (dataCookie[0].trim() === "numCuestion") {
+        return dataCookie[1];
+    }
     return null;
 }
 

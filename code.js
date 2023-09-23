@@ -1,14 +1,17 @@
 window.addEventListener("load", function (event) {
-    let cookie = obtenerCookie();
 
     if (!validateStart()) {
         this.document.getElementById("body").classList.add("fondoError");
         this.document.getElementById("main").classList.add("hidden");
-    }
-    
-    if (cookie != null){
-        NUMCUESTIONNOW = cookie;
-        loadCuestion(NUMCUESTIONNOW);
+    } else {
+        let cookie = obtenerCookie();
+
+        if (cookie != null){
+            NUMCUESTIONNOW = cookie;
+            loadCuestion(NUMCUESTIONNOW);
+        } else {
+            this.document.getElementById("start").classList.remove("hidden");
+        }
     }
 });
 
@@ -90,7 +93,7 @@ function validateRespuesta(respuesta){
     document.getElementById("error").classList.add("hidden");
     document.getElementById("correcto").classList.add("hidden");
     
-    if (respuestaUser === respuesta){
+    if (respuestaUser.toLowerCase().trim() === respuesta){
         document.getElementById("correcto").classList.remove("hidden");
         loadCuestion(++NUMCUESTIONNOW);
     } else {
@@ -153,15 +156,14 @@ function saveCookie(numCuestion){
 }
 
 function obtenerCookie() {
-    let cookies = document.cookie.split("; ");
-
-    for (let i of cookies.length) {
-        let cookie = cookies[i].split("=");
-        if (cookie[0] === "numCuestion") {
-            return decodeURIComponent(cookie[1]);
+    document.cookie.split(";").forEach((cookie) => {
+        console.log(cookie);
+        let dataCookie = cookie.split("=");
+        if (dataCookie[0].trim() === "numCuestion") {
+            return dataCookie[1];
         }
-    }
-    return null; // Si no se encuentra la cookie
+    });
+    return null;
 }
 
 function loadData(){

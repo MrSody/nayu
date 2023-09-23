@@ -93,7 +93,7 @@ function validateRespuesta(respuesta){
     document.getElementById("error").classList.add("hidden");
     document.getElementById("correcto").classList.add("hidden");
     
-    if (respuestaUser === respuesta){
+    if (respuestaUser.toLowerCase().trim() === respuesta){
         document.getElementById("correcto").classList.remove("hidden");
         loadCuestion(++NUMCUESTIONNOW);
     } else {

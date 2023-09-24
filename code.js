@@ -165,12 +165,104 @@ function obtenerCookie() {
 function loadData(){
     return [
         {
-            "pregunta": "esto es una prueba 1",
-            "respuesta": "test",
+            "pregunta": "¿Cuál es el color que no existe?",
+            "respuesta": "transparente",
         },
         {
-            "pregunta": "esto es una prueba 2",
-            "respuesta": "test2",
-        }
+            "pregunta": "¿A quién le dicen Alien?",
+            "respuesta": "v",
+        },
+        {
+            "pregunta": "¿Tiene famosa memoria, gran tamaño y dura piel y la nariz más grandota, que en el mundo pueda haber?",
+            "respuesta": "elefante",
+        },
+        {
+            "pregunta": "¿Camino sin tener patas, a cuestas llevo mi casa. Por donde mi cuerpo pasa queda un hilillo de plata?",
+            "respuesta": "caracol",
+        },
+        {
+            "pregunta": "¿Entre la lluvia y el sol, un arco a todo color?",
+            "respuesta": "arcoiris",
+        },
+        {
+            "pregunta": "¿Quién se toma muchas fotos comiendo?",
+            "respuesta": "jin",
+        },
+        {
+            "pregunta": "¿Por un caminito, va caminando un bicho. El nombre del bicho ya te lo he dicho?",
+            "respuesta": "vaca",
+        },
+        {
+            "pregunta": "Verde por fuera, suave por dentro, en el jardín del aguacate me encuentro. no soy fruto, ni soy parte del árbol, Juntos caminamos, fui regalo. ¿Quién soy yo? Descúbrelo mientras caminas.",
+            "respuesta": "medias de aguacate",
+        },
+        {
+            "pregunta": "¿Orejas largas, rabo cortito, corro y salto muy ligerito?",
+            "respuesta": "conejo",
+        },
+        {
+            "pregunta": "En el corazón de la música brillamos, siete estrellas juntas nos encontramos. ¿Quiénes somos en este escenario, que en el arte de la música siempre brillamos?",
+            "respuesta": "bts",
+        },
+        {
+            "pregunta": "¿En rincones y entre ramas mis redes voy construyendo, para que moscas incautas, en ellas vayan cayendo?",
+            "respuesta": "araña",
+        },
+        {
+            "pregunta": "De los 4 chicos en una carrera de atletismo se sabe que suga ha llegado inmediatamente detrás de jimin y jin ha llegado en medio de v y suga. <br> ¿Dime el orden de llegada de cada uno? <br> (separa cada uno con guiones( - ))",
+            "respuesta": "jimin - suga - jin – v",
+        },
+        {
+            "pregunta": "¿Es la reina de los mares, su dentadura es muy buena, y por no ir nunca vacía, siempre dicen que va llena?",
+            "respuesta": "ballena",
+        },
+        {
+            "pregunta": "¿Te lo digo y te repito y te lo debo avisar que por más que te lo diga no lo vas a adivinar?",
+            "respuesta": "te",
+        },
+        {
+            "pregunta": "Nuestros álbumes cuentan una historia oculta, en las notas y los MV, una trama tumultuosa. el amor y el crecimiento son centrales, ¿Qué concepto llevamos en nuestros rituales?",
+            "respuesta": "hyyh",
+        },
+        {
+            "pregunta": "En la huerta me verás, con hojas y raíz. Soy de color naranja y mi sabor te hará feliz. ¿Qué soy?",
+            "respuesta": "zanahoria",
+        },
+        {
+            "pregunta": "Ruedo, ruedo y en los bolsillos me quedo ¿Qué soy?",
+            "respuesta": "moneda",
+        },
+        {
+            "pregunta": "Descifra este mensaje oculto de BTS: <br> L, E, H, A, O, V, E, N, A, M, Y, G, P, S, L, Z, F <br> ¡Espero que encuentres el mensaje especial que se oculta en estas letras!",
+            "respuesta": "love myself",
+        },
+        {
+            "pregunta": "Todos me quieren para descansar. ¿No lo sabes? ¡Si ya te lo he dicho! No lo pienses más.",
+            "respuesta": "silla",
+        },
+        {
+            "pregunta": "Lana sube, lana baja ¿Qué es?",
+            "respuesta": "navaja",
+        },
+        {
+            "pregunta": "BTS es conocido por sus letras significativas. Aquí tienes un acertijo que forma una frase inspiradora a partir de las iniciales de sus canciones: <br> 'Porque Juntos Alcanzamos Sueños En Realidad' <br> ¡Espero que encuentres estas palabras alentadoras en este acertijo!",
+            "respuesta": "porque juntos alcanzamos sueños en realidad.",
+        },
+        {
+            "pregunta": "Su interior es blanco y dulce. Por fuera peludo y feo. Su nombre asusta a los niños, pero a mí no me da miedo",
+            "respuesta": "coco",
+        },
+        {
+            "pregunta": "No es joya ni prenda, pero es valioso en verdad, un regalo que ilumina mentes, sin cesar. siete estrellas que con magia te atraparan. ¿Qué obsequio encantado, sin necesidad de conjuro, Qué regalo especial será?",
+            "respuesta": "libro",
+        },
+        {
+            "pregunta": "BTS tiene una fórmula que es una quimica especial:  JM + Jk = ? + ?. ¿Puedes descifrar qué formula puede igual la ecuación? ¡Espero que encuentres el significado detrás de esta ecuación especial!",
+            "respuesta": "nosotros",
+        },
+        {
+            "pregunta": "Si el cielo esta oscuro y tormentoso, nosotros juntos podremos volverlo claro y despejado. Sin ser salvajes ¿Ya sabes la cancion cielo?",
+            "respuesta": "24/7=heaven",
+        },
     ];
 }

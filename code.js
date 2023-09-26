@@ -210,7 +210,7 @@ function loadData(){
         },
         {
             "pregunta": "De los 4 chicos en una carrera de atletismo se sabe que suga ha llegado inmediatamente detrás de jimin y jin ha llegado en medio de v y suga. <br> ¿Dime el orden de llegada de cada uno? <br> (separa cada uno con guiones( - ))",
-            "respuesta": "jimin - suga - jin – v",
+            "respuesta": "jimin - suga - jin - v",
         },
         {
             "pregunta": "¿Es la reina de los mares, su dentadura es muy buena, y por no ir nunca vacía, siempre dicen que va llena?",
@@ -221,7 +221,7 @@ function loadData(){
             "respuesta": "te",
         },
         {
-            "pregunta": "Nuestros álbumes cuentan una historia oculta, en las notas y los MV, una trama tumultuosa. el amor y el crecimiento son centrales, ¿Qué concepto llevamos en nuestros rituales?",
+            "pregunta": "Nuestros álbumes cuentan una historia oculta, en las notas y los MV, una trama tumultuosa. el amor y el crecimiento son centrales, ¿Qué concepto llevamos en nuestros rituales, como se llama la era?",
             "respuesta": "hyyh",
         },
         {

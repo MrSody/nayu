@@ -177,14 +177,6 @@ function loadData(){
             "respuesta": "elefante",
         },
         {
-            "pregunta": "¿Camino sin tener patas, a cuestas llevo mi casa. Por donde mi cuerpo pasa queda un hilillo de plata?",
-            "respuesta": "caracol",
-        },
-        {
-            "pregunta": "¿Entre la lluvia y el sol, un arco a todo color?",
-            "respuesta": "arcoiris",
-        },
-        {
             "pregunta": "¿Quién se toma muchas fotos comiendo?",
             "respuesta": "jin",
         },
@@ -217,28 +209,16 @@ function loadData(){
             "respuesta": "ballena",
         },
         {
-            "pregunta": "¿Te lo digo y te repito y te lo debo avisar que por más que te lo diga no lo vas a adivinar?",
-            "respuesta": "te",
-        },
-        {
             "pregunta": "Nuestros álbumes cuentan una historia oculta, en las notas y los MV, una trama tumultuosa. el amor y el crecimiento son centrales, ¿Qué concepto llevamos en nuestros rituales, como se llama la era?",
             "respuesta": "hyyh",
         },
         {
-            "pregunta": "En la huerta me verás, con hojas y raíz. Soy de color naranja y mi sabor te hará feliz. ¿Qué soy?",
-            "respuesta": "zanahoria",
-        },
-        {
-            "pregunta": "Ruedo, ruedo y en los bolsillos me quedo ¿Qué soy?",
-            "respuesta": "moneda",
+            "pregunta": "¿Entre la lluvia y el sol, un arco a todo color?",
+            "respuesta": "arcoiris",
         },
         {
             "pregunta": "Descifra este mensaje oculto de BTS: <br> L, E, H, A, O, V, E, N, A, M, Y, G, P, S, L, Z, F <br> ¡Espero que encuentres el mensaje especial que se oculta en estas letras!",
             "respuesta": "love myself",
-        },
-        {
-            "pregunta": "Todos me quieren para descansar. ¿No lo sabes? ¡Si ya te lo he dicho! No lo pienses más.",
-            "respuesta": "silla",
         },
         {
             "pregunta": "Lana sube, lana baja ¿Qué es?",
@@ -249,16 +229,12 @@ function loadData(){
             "respuesta": "porque juntos alcanzamos sueños en realidad.",
         },
         {
-            "pregunta": "Su interior es blanco y dulce. Por fuera peludo y feo. Su nombre asusta a los niños, pero a mí no me da miedo",
-            "respuesta": "coco",
-        },
-        {
             "pregunta": "No es joya ni prenda, pero es valioso en verdad, un regalo que ilumina mentes, sin cesar. siete estrellas que con magia te atraparan. ¿Qué obsequio encantado, sin necesidad de conjuro, Qué regalo especial será?",
             "respuesta": "libro",
         },
         {
-            "pregunta": "BTS tiene una fórmula que es una quimica especial:  JM + Jk = ? + ?. ¿Puedes descifrar qué formula puede igual la ecuación? ¡Espero que encuentres el significado detrás de esta ecuación especial!",
-            "respuesta": "nosotros",
+            "pregunta": "BTS tiene una fórmula que es una quimica especial:  JM + Jk = ?. ¿Puedes descifrar qué formula secreta es, ademas la tenemos? ¡Espero que encuentres el significado detrás de esta ecuación especial!",
+            "respuesta": "amor",
         },
         {
             "pregunta": "Si el cielo esta oscuro y tormentoso, nosotros juntos podremos volverlo claro y despejado. Sin ser salvajes ¿Ya sabes la cancion cielo?",
